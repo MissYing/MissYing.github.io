@@ -1,0 +1,7 @@
+{
+  "home": { "zhResume": "简历", "enResume": "Resume", "zhName": "李莹", "enName": "LiYing", "level":"web前端工程师/h5前端工程师" },
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}

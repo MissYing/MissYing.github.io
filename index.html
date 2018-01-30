@@ -1,1 +1,30 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><title>my-resume</title><link href=/static/css/app.b4bc354d548e238f1a029c3bdb4af9f2.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.11d26521f5070bd8f59f.js></script><script type=text/javascript src=/static/js/vendor.6df4955bbae5e2de882c.js></script><script type=text/javascript src=/static/js/app.f85305af1326f7c2898b.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>ying-resume</title><link href=/ying-resume/static/css/app.659148d43bb263b2662e83441dad2937.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/ying-resume/static/js/manifest.a8163da7d0b6c9c970b1.js></script><script type=text/javascript src=/ying-resume/static/js/vendor.4a31fdc01f1e3c97bbab.js></script><script type=text/javascript src=/ying-resume/static/js/app.7c174283029366c64969.js></script></body></html><script>// 计算root fontsize
+  window.__setFontSize__ = (function (doc, win) {
+    if (!IsPC()) { // 移动端
+      var docEl = doc.documentElement,
+      recalc = function () {
+        var clientWidth = docEl.clientWidth
+        if (!clientWidth) return
+        docEl.style.fontSize = 16 * (clientWidth / 375) + 'px'
+      }
+      if (!doc.addEventListener) return
+      doc.addEventListener('DOMContentLoaded', recalc, false)
+      doc.addEventListener('resize', recalc, false)
+
+      return recalc
+    }
+  })(document, window)
+
+  function IsPC () { //判断是移动端还是pc
+    var userAgentInfo = navigator.userAgent
+    var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"]
+    var flag = true
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false
+            break
+        }
+    }
+    return flag
+  }
+  // console.log(IsPC());</script>
